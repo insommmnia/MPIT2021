@@ -288,7 +288,7 @@ height: auto;
 
 </head>
     <?php 
-       $connect = mysqli_connect("127.0.0.1","root","","mpit");
+       $connect = mysqli_connect("mysql.09-15-pn.myjino.ru","09-15-pn","IT.SCHOOL123","09-15-pn_nikita-alekseev");
         $text_query = "SELECT * FROM worker ";
         $query = mysqli_query($connect, $text_query);
         $result = $query->fetch_assoc();
@@ -297,7 +297,7 @@ height: auto;
     ?>
     <body>
     	
-    	<div class="col-12 row" style="background-image: url(23.png); background-size: 100% 100%; height: 1000px; text-align: center;">
+    	<div class="col-12 " style="background-image: url(bg23.png); background-size: 100% 100%; height: 1000px; text-align: center;">
     	
     		<div class="col-3" style="background-color:; padding-bottom: 100px; height: 20%; margin-left: 50%; top: 40%">
     		<h1 style="color: white; font-size: 60px;">Work-IT</h1>
@@ -324,7 +324,7 @@ height: auto;
               <a href="index.php" class="active active-first">Главная</a>
             </li>
             <li>
-              <a >О нас</a>
+              <a href="#features" >О нас</a>
             </li>
             
             
