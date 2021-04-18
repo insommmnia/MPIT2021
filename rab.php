@@ -373,7 +373,7 @@ button:hover{
                  <div style="background-color: ; height: 100%; width: 300px; ">
                   <div style="background-image: url(img/bgw.png); background-size: 100% 100%; height: 100%; width: 300px; ">
                     <div style="background-color: ; width: 300px; position: relative; height: 50px; top: 5%">
-                      <h3 style="padding-left: 25px; top: 15%">18 Апреля
+                      <h4 style="padding-left: 5px; top: 15%">18 Апреля
                        <?php 
                         if($result3["ready"] == 0)
                         {
@@ -387,7 +387,7 @@ button:hover{
                         {
                           echo "Выполнено";
                         }  
-                        ?></h3>
+                        ?></h4>
                     </div>
                     
                     <div style="background-color: ; width: 300px; position: relative; height: 30px; top: 8%; left: 15%">
@@ -498,9 +498,9 @@ button:hover{
       <header class="main-header top-header" id="" >
     <div class="container">
       <nav class="navbar navbar-expand-lg main-nav px-0">
-        <a class="navbar-brand" href="/mojo">
-                <img src="logo.png" style="width: 100%" alt="rajeshdas.com">
-              </a>
+        <a class="navbar-brand" href="index.php">
+					      <h3 style="color: white;">Work-IT</h3>
+					    </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar icon-bar-1"></span>
                         <span class="icon-bar icon-bar-2"></span>
@@ -509,15 +509,13 @@ button:hover{
         <div class="collapse navbar-collapse" id="mainMenu">
           <ul class="navbar-nav ml-auto text-uppercase f1">
             <li>
-              <a href="#home" class="active active-first">Главная</a>
+              <a href="index.php" class="active active-first">Главная</a>
             </li>
             <li>
-              <a href="#about">О нас</a>
+              <a >О нас</a>
             </li>
             
-            <li>
-              <a href="#testimony">Подписки</a>
-            </li>
+            
             <?php if ($_SESSION['id'] != "") {
                                   
            
@@ -527,12 +525,12 @@ button:hover{
             
             $result2 = $query2->fetch_assoc();
             if ($result2["position"] == "Администратор") {
-              echo "<li class='scroll-to-section'><a href='worker.php'>Личный кабинет</a></li> ";
-              echo "<li class='scroll-to-section'><a href='exit.php'>Выйти</a></li> ";
+            	echo "<li class='scroll-to-section'><a href='worker.php'>Личный кабинет</a></li> ";
+            	echo "<li class='scroll-to-section'><a href='exit.php'>Выйти</a></li> ";
             } else{
 
-              echo "<li class='scroll-to-section'><a href='rab.php'>Личный кабинет</a></li> ";
-              echo "<li class='scroll-to-section'><a href='exit.php'>Выйти</a></li> ";
+            	echo "<li class='scroll-to-section'><a href='rab.php'>Личный кабинет</a></li> ";
+            	echo "<li class='scroll-to-section'><a href='exit.php'>Выйти</a></li> ";
             }
             
         } else {
@@ -578,7 +576,7 @@ button:hover{
             <div style="background-color: ; height: 100%; width: 300px; ">
                   <div style="background-image: url(img/bgw.png); background-size: 100% 100%; height: 100%; width: 300px; ">
                     <div style="background-color: ; width: 300px; position: relative; height: 50px; top: 5%">
-                       <button class="btnp" style="border: none; margin-left: 5px;background: transparent;"><h3 style=" top: 15%">18 Апреля 
+                       <button class="btnp" style="border: none; margin-left: 5px;background: transparent;"><h4 style=" top: 15%;">18 Апреля 
                         <?php 
                         if($result3["ready"] == 0)
                         {
@@ -592,7 +590,7 @@ button:hover{
                         {
                           echo "Доработать";
                         }  
-                        ?></h3>
+                        ?></h4>
                         </button>
                     </div>
                     
@@ -802,7 +800,7 @@ button:hover{
               <div class="pla" style="z-index: 0; margin-left: 50px; margin-top: 20%; transition: 0.5s;position: absolute; opacity: 0; background-color: ; height: 500px; width: 300px; ">
                   <div style="background-image: url(img/bgw.png); background-size: 100% 100%; height: 100%; width: 300px; ">
                     <div style="background-color: ; width: 300px; position: relative; height: 50px; top: 5%">
-                      <h3 style="padding-left: 25px; top: 15%">18 Апреля
+                      <h4 style="padding-left: 5px; top: 15%">18 Апреля
                         <?php 
                         if($result3["ready"] == 0)
                         {
@@ -817,7 +815,7 @@ button:hover{
                           echo "Доработать";
                         }  
                         ?>
-                      </h3>
+                      </h4>
                     </div>
                     
                     <div style="background-color: ; width: 300px; position: relative; height: 30px; top: 8%; left: 15%">
@@ -1118,7 +1116,7 @@ button:hover{
 </div><!-- End -->
 </div>
 
-
+<div style="background-image: url(frame.png);background-size: 100% 100%; width: auto; height: 700px; margin-top: 100px;"></div>
     
 
     
